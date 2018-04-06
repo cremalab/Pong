@@ -1,0 +1,75 @@
+
+
+::-webkit-scrollbar  { 
+  display: none;
+}
+
+#btns {
+  padding: 10px 100px 100px 10px;
+  position: fixed;
+  top: 18px;
+  left: 30px;
+  transform: scale(1.3);
+  opacity: 0.2;
+  z-index: 100;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#btns:hover {
+  opacity: 0.8;
+}
+
+
+.controlLabel {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  color: #555;
+  font-size: 11px;
+  padding: 2px 5px;
+  height: 13px;
+}
+
+#speedGrp {
+  display: flex;
+}
+#speedRange {
+  width: 120px;
+  transform: translate(-52px, 53px) rotate(90deg);
+}
+#playbtn, #restartbtn {
+  margin-bottom: 3px;
+  border: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  background: #555;
+  padding: 2px 5px;
+}
+
+#playbtn:hover, #restartbtn:hover {
+  background: #666;
+}
+
+#playbtn:active, #restartbtn:active {
+  background: #444;
+}
+
+#playbtn:focus, #restartbtn:focus {
+  outline: none;
+}
+
+#root {
+  font-family: 'Source Sans Pro', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1000px;
+  transform: scale(1);
+  transform-origin: top left;
+  background-color: grey;
+  color: #0A3350;
+  overflow: hidden;
+}
+
