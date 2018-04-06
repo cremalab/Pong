@@ -4,6 +4,23 @@
   display: none;
 }
 
+#scores {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: space-between;
+  justify-content: space-between;
+  width: 1800px;
+  height: 100px;
+  z-index: 2200;
+  margin-left: 120px;
+}
+
+.score {
+  color : #FFFFFF;
+  font-size: 40px;
+  margin: 20px;
+  z-index: 2000;
+}
 #btns {
   padding: 10px 100px 100px 10px;
   position: fixed;

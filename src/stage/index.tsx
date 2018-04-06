@@ -32,7 +32,6 @@ class Stage extends React.Component<{}, State> {
   }
 
   onChange(action: { type: string, payload?: any }) {
-    console.log('stage onchange');
     const actors = this.state.actors;
     if (action.type === 'enter' && !actors.includes(action.payload.actor)) {
       const added = this.state.actors.concat(action.payload.actor as string);

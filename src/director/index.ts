@@ -25,7 +25,6 @@ class Director {
 
   subscribe(method: (action: Action) => void) {
     this.subscriptions.push(method);
-    console.log(this.subscriptions);
   }
 
   dispatch(action: Action) {
@@ -34,7 +33,6 @@ class Director {
 
   // create an onAction function for the actor and subscribe it to the Director
   registerMotions(actor: any, actorName: string | string[], handlers: any) {  // replace these 'anys'
-    console.log('registering paddle');
     const director = this;
     // register actor's entry motion
     actor.componentDidMount = (function () {
@@ -63,6 +61,7 @@ class Director {
         if (action.type === 'motion' && action.payload.motion in handlers) {
           const handler = handlers[action.payload.motion];
           handler(action.payload.duration, director.tl, action.payload);
+
         }
       }
     }).bind(actor);
